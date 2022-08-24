@@ -1,0 +1,26 @@
+{
+    "short_name": "Bio Tag",
+    "name": "Bio Tag",
+    "start_url": ".",
+    "display": "standalone",
+    "theme_color": "#ffffff",
+    "theme-color": "#ffffff",
+    "background_color": "#000000",
+    "background-color": "#000000",
+    "description": "Bio Tag é um cartão de visita por aproximação NFC, link para redes sociais e também PDF Interativo",
+    "icons":[
+        {
+            "src": "assets/logo192.png",
+            "type": "image/png",
+            "sizes": "192x192",
+            "purpose": "maskable any"
+        },
+        {
+            "src": "assets/logo512.png",
+            "type": "image/png",
+            "sizes": "512x512",
+            "purpose": "maskable any"
+        }
+    ]
+    
+}

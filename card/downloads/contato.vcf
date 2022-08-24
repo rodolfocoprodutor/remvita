@@ -1,0 +1,23 @@
+BEGIN:VCARD
+VERSION:3.0
+FN:Afonso Queiroz
+N:Queiroz;Afonso;;;
+EMAIL;TYPE=INTERNET;TYPE=WORK:afonso@remvita.com.br
+item1.TEL:11 98415-6726
+item1.X-ABLabel:whatsapp
+item2.ORG:Remvita
+item2.X-ABLabel:
+item3.TITLE:Diretor
+item3.X-ABLabel:
+item4.URL:https\://remvita.com.br
+item4.X-ABLabel:website
+item5.URL:https\://www.instagram.com/remvita_oficial
+item5.X-ABLabel:instagram
+item6.URL:https\://www.facebook.com/remvitaterapia
+item6.X-ABLabel:facebook
+item7.URL:https\://www.youtube.com/channel/UCf0zLsAUQm_HJvoUnlPQCKg
+item7.X-ABLabel:youtube
+PHOTO:https://lh3.googleusercontent.com/contacts/ABsqplvO9XZDpWUL-8kM_x3yCz
+ 782agTPiFneysVuB5KB4PIEq_IbMjs
+CATEGORIES:myContacts
+END:VCARD

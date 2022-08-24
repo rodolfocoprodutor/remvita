@@ -1,0 +1,391 @@
+/* Variables css*/
+:root {
+    /*Primary colors*/
+    --brand-blue: #44C0FE;
+    --brand-blue-light: #B8E7FF;
+    --brand-blue-light-02: #EBF8FF;
+    --brand-beige: #FFFAF1;
+    --brand-blue-hover: #003D99;
+
+    /*Secondary colors*/
+    --brand-green: #16B501;
+    --brand-green-light: #C0FFB8;
+    --brand-green-light-02: #EDFFEB;
+    --brand-green-hover: #00661F;
+
+    /*Text Colors*/
+    --gray-headline: #061800;
+    --gray-paragraph: #384633;
+    --white: #EDEDED;
+
+    /* Font and typography */
+    /* .5rem = 8px / 1rem = 16px */
+    --body-font: 'Inter', sans-serif;
+    --header: 5.8rem;
+    --title: clamp(3rem, 3.8vw, 4.2rem);
+    --subtitle: clamp(2rem, 2.4vw, 2.8rem);
+    --subtitle-h4: clamp(1.8rem, 2.2vw, 2.4rem);
+    --body-text: clamp(1.6rem, 1.8vw, 1.8rem);
+    --details: clamp(1.4rem, 1.6vw, 1.8rem);
+    --smallest: clamp(1rem, 1.2vw, 1.4rem);
+
+}
+
+*,
+*::after,
+*::before {
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    border: 0;
+    outline-color: #ccc;
+    color: var(--first-color);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: 62.5%;
+    font-family: var(--body-font);
+    font-display: swap;
+}
+
+html {
+    max-width: 36rem;
+    margin: auto;
+    scroll-behavior: smooth;
+    direction: ltr;
+}
+
+h1 {
+    font-size: var(--header);
+    text-transform: uppercase;
+    font-weight: 700;
+    text-align: center;
+}
+
+h2 {
+    font-size: var(--title);
+    font-weight: 700;
+    line-height: 160%;
+}
+
+h3 {
+    font-size: var(--subtitle);
+    font-weight: 600;
+    line-height: 150%;
+}
+
+p {
+    font-size: var(--body-text);
+    font-weight: 400;
+    line-height: 140%;
+}
+
+li {
+    font-size: var(--body-text);
+    font-weight: 500;
+}
+
+a {
+    font-size: var(--body-text);
+    font-weight: 500;
+}
+
+img {
+    display: block;
+    max-width: max-content;
+    height: auto;
+    object-fit: contain;
+}
+
+span {
+    font-size: inherit;
+}
+
+strong {
+    font-size: inherit;
+}
+
+b {
+    font-size: inherit;
+}
+
+button {
+    margin: auto;
+    display: block;
+    width: 100%;
+    max-width: 25.6rem;
+    padding: 1.6rem 4rem;
+    color: var(--white);
+    border-radius: 0.8rem;
+    font-size: var(--body-text);
+    font-weight: 500;
+    text-align: center;
+    text-transform: normal;
+    background-color: var(--brand-blue);
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: background-color .4s ease;
+    transition: box-shadow .4s ease;
+}
+
+button:hover {
+    box-shadow: 0px 1.25rem 16px -11px hsla(100, 100%, 10%, .4);
+}
+
+button:disabled {
+    background-color: #E4E4E4;
+    color: #8A8A8A;
+    box-shadow: none;
+    pointer-events: none;
+}
+
+main {
+    width: 100%;
+}
+
+section {
+    position: relative;
+    margin: auto;
+    width: 100%;
+    padding-top: 1.6rem;
+    padding-bottom: 1.6rem;
+}
+
+.container {
+    display: grid;
+    width: min(100% - 10%, 320px);
+    margin-inline: auto;
+    gap: 2.4rem;
+    overflow: hidden;
+}
+
+header.profile {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    place-items: center;
+    padding-top: 3.2rem;
+}
+
+header.profile img {
+    background-color: transparent;
+    border-radius: 50%;
+    aspect-ratio: 1 / 1;
+    outline: .8rem solid var(--brand-blue);
+    box-shadow: 0px 1.25rem 26px -11px hsla(100, 100%, 10%, .3);
+    margin-bottom: 1.6rem;
+}
+
+header.profile h2 {
+    color: var(--gray-headline);
+}
+
+header.profile p {
+    text-align: center;
+    font-weight: 400;
+    color: var(--gray-paragraph);
+}
+
+section.s-redes nav.menu-redes .menu-redes-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1.6rem;
+    justify-content: center;
+    padding-top: 1.2rem;
+    padding-bottom: 1.2rem;
+}
+
+section.s-redes nav.menu-redes .menu-redes-content li {
+    display: grid;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    background-color: var(--brand-blue-light-02);
+    place-items: center;
+    cursor: pointer;
+}
+
+section.s-redes nav.menu-redes .menu-redes-content li .icon {
+    width: 2.4rem;
+    height: 2.4rem;
+    stroke-width: 0;
+    stroke: currentColor;
+    fill: var(--gray-headline);
+}
+
+section.s-links .content-links {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-items: center;
+    padding-bottom: 3.2rem;
+    row-gap: 2.4rem;
+    margin: auto;
+}
+
+section.s-links .content-links .link-contato button {
+    color: var(--white);
+    background-color: var(--gray-headline);
+}
+section.s-links .content-links .link-item button {
+    color: var(--gray-headline);
+    background-color: var(--brand-blue);
+    width: 100%;
+    max-width: 100%;
+}
+
+section.s-links .content-links .link-item button:hover {
+    background-color: var(--brand-blue-hover);
+    color: var(--white);
+}
+
+footer {
+    display: grid;
+    width: min(100% - 10%, 26rem);
+}
+
+footer span {
+    display: block;
+    width: 100%;
+    margin: auto;
+    font-size: var(--body-text);
+    text-align: center;
+}
+
+/*Modal*/
+.open-button{
+    position:absolute;
+    left: .8rem;
+    top: .8rem;
+}
+.modal {
+    border-radius: .6rem;
+    width: 100%;
+    max-width: 90vw;
+    padding: 3.2rem 2.4rem;
+    position:relative;
+    left: 50%;
+    top: 20%;
+    transform: translateX(-50%);
+    overflow: hidden;
+}
+
+.modal::backdrop {
+    background: rgb(0 0 0 / 0.4);
+}
+
+.modal_wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 1.6rem;
+
+    justify-content: center;
+    align-items: center;
+}
+.modal-links{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 1.6rem;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-links > a{
+    display: block;
+    width: 100%;
+    padding: .8rem 1.6rem;
+    border-radius: .4rem;
+    text-align: center;
+    background-color: var(--brand-blue-light);
+    color: var(--gray-paragraph);
+}
+ details{
+    display: flex;
+    width: 100%;
+    max-width: 36rem;
+    justify-content: center;
+    align-items: center;
+}
+ details img{
+    width: 100%;
+    max-width: max-content;
+    object-fit: contain;
+}
+ details summary{
+    margin: auto;
+    display: block;
+    width: 100%;
+    max-width: max-content;
+    padding: 1.6rem 2.4rem;
+    border-radius: .4rem;
+    text-align: center;
+    background-color: var(--gray-headline);
+    color: var(--white);
+    font-size: var(--body-text);
+    cursor: pointer;
+    vertical-align: middle;
+}
+ details summary svg{
+    vertical-align: middle;
+    margin-left: 1.6rem;
+}
+
+.modal-share{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    gap: .4rem;
+
+    justify-content: center;
+    align-items: center;
+}
+.modal-share > a{
+    display: block;
+    padding: .8rem 1.6rem;
+    border-radius: .4rem;
+    text-align: center;
+    background-color: var(--brand-green-light);
+    color: var(--gray-paragraph);
+}
+
+dialog >h3, p{
+    text-align: center;
+}
+.button {
+    background-color: var(--brand-blue);
+    color: var(--white);
+    font-size: var(--details);
+    font-weight: 400;
+    padding: 1.2rem 1.6rem;
+    border-radius: .6rem;
+    cursor: pointer;
+    max-width: max-content;
+}
+
+.button:hover,
+.button:focus {
+    background-color: var(--brand-blue-hover);
+}
+.icon-share{
+    width: 2.8rem;
+    height: 2.8rem;
+    stroke-width: 0;
+    stroke: currentColor;
+    fill: var(--gray-headline);
+}
+.icon-qrcode{
+    width: 2rem;
+    height: 2rem;
+    stroke-width: 0;
+    stroke: currentColor;
+    fill: var(--white);
+}
